@@ -24,6 +24,7 @@ public class UserResource {
     // Sign Up Endpoint
     @POST
     @Path("/signup")
+    @Transactional
     public Response signUp(User user) {
         if (user.getUsername() == null || user.getUsername().isEmpty()) {
             return Response.status(Response.Status.BAD_REQUEST).entity("Username cannot be empty").build();
