@@ -9,6 +9,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'io.quarkus:quarkus-container-image-podman'
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
     implementation 'io.quarkus:quarkus-rest'
     implementation 'io.quarkus:quarkus-rest-jsonb'
